@@ -1,0 +1,44 @@
+1. OWASP är en ideell organisation som fokuserar på att 
+undersöka och lista de främsta hoten mot webbsidor 
+och applikationer. Allt deras material är gratis och 
+lätt att tillgå så att alla ska kunna öka säkerheten 
+på sina applikationer.
+
+2. En injektions-attack är när en användare lägger 
+till farlig data i ett inputfält på sidan eller 
+applikationen som sedan tar sig in i programmet och 
+kan orsaka skada. För att undvika det kan man använda 
+sig av validering av inkommande data eller att göra 
+rent inkommande data så att den blir säker. 
+
+3. Autentikation, dvs login-system kan också vara en 
+svagpunkt för applikationer om de inte är tillräckligt 
+säkrade. För att förhindra detta kan man använda sig 
+av så-kallad två-stegs-autentikation där användaren 
+behöver identifiera sig på två olika sätt, eller att 
+begränsa antalet inloggningsförsök en användare kan 
+göra inom en specifik period.
+
+4. Serialization används för att packa ner objekt och 
+data från koden i applikationen för att lättare kunna 
+lagra den, till exempel. Deserialization är motsatsen, 
+att man packar upp datan till det format den var från 
+början. Det farliga är om någon utomstående kan komma 
+åt den nerpackade datan och påverka den så att den 
+förändras när den sen packas upp. Det är möjligt att 
+försöka ta fast sådana attackerare, men det bättre 
+valet är egentligen att skydda sig från början och se 
+till att inte tillåta någon obehörig att packa upp 
+datan.
+
+5. Cross-site scripting kan hända om en webbapplikation 
+tillåter en användare att lägga till egen kod i en url 
+eller webbsida. Detta kan göra så att farlig Javascript 
+kod körs av en annan användares browser och på så sätt 
+komma åt deras dator/telefon/liknande och orsaka skada 
+där. För att förhindra detta i sin applikation kan man 
+dubbelkolla eller städa upp användar-genererad kod. 
+Moderna ramverk som ReactJS och Ruby on Rails 
+innehåller också inbyggt skydd mot detta. 
+
+
